@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BottomSheetFirst-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetFirst" title="BottomSheetFirst" id="Y6W-OH-hqX" customClass="BottomSheetFirst" customModule="Gotovka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="Bo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="VhV-iN-fE9">
+                                <rect key="frame" x="25" y="84" width="364" height="739.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VhV-iN-fE9" secondAttribute="height" multiplier="310:630" id="mXb-Qw-cqB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VhV-iN-fE9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="UWG-8v-VIN"/>
+                            <constraint firstItem="VhV-iN-fE9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="fwk-NE-Fey"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VhV-iN-fE9" secondAttribute="trailing" constant="25" id="rIt-K9-tD8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="VhV-iN-fE9" id="OGk-k2-R04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.21739130434787" y="75.669642857142847"/>
+        </scene>
+        <!--BottomSheetSecond-->
+        <scene sceneID="uXr-ag-7MS">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetSecond" title="BottomSheetSecond" id="T45-tT-21U" customClass="BottomSheetSecond" customModule="Gotovka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZaD-YP-frr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second" translatesAutoresizingMaskIntoConstraints="NO" id="JpM-tO-Tpa">
+                                <rect key="frame" x="25" y="84" width="364" height="739.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JpM-tO-Tpa" secondAttribute="height" multiplier="310:630" id="DBS-BZ-OlJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jPV-VK-9XH"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JpM-tO-Tpa" firstAttribute="top" secondItem="jPV-VK-9XH" secondAttribute="top" constant="40" id="0mT-ua-QhJ"/>
+                            <constraint firstItem="jPV-VK-9XH" firstAttribute="trailing" secondItem="JpM-tO-Tpa" secondAttribute="trailing" constant="25" id="Q0F-Mx-uB9"/>
+                            <constraint firstItem="JpM-tO-Tpa" firstAttribute="leading" secondItem="jPV-VK-9XH" secondAttribute="leading" constant="25" id="fti-2x-Kr3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="JpM-tO-Tpa" id="xZh-vp-p7v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVb-aR-apI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="76"/>
+        </scene>
+        <!--BottomSheetThird-->
+        <scene sceneID="cyY-O9-nnY">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetThird" title="BottomSheetThird" id="26I-aV-D3q" customClass="BottomSheetThird" customModule="Gotovka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DMs-ch-sh3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HWH-qC-HFu">
+                                <rect key="frame" x="25" y="84" width="364" height="739.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="unX-tn-DFl"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HWH-qC-HFu" firstAttribute="leading" secondItem="unX-tn-DFl" secondAttribute="leading" constant="25" id="JGm-9O-VKg"/>
+                            <constraint firstItem="unX-tn-DFl" firstAttribute="trailing" secondItem="HWH-qC-HFu" secondAttribute="trailing" constant="25" id="R7q-72-DmB"/>
+                            <constraint firstItem="HWH-qC-HFu" firstAttribute="width" secondItem="HWH-qC-HFu" secondAttribute="height" multiplier="310:630" id="WRf-8g-TIq"/>
+                            <constraint firstItem="HWH-qC-HFu" firstAttribute="top" secondItem="unX-tn-DFl" secondAttribute="top" constant="40" id="i24-qL-dDC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="HWH-qC-HFu" id="pVh-Tu-KhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwp-yU-pFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1345" y="76"/>
+        </scene>
+        <!--BottomSheetFourth-->
+        <scene sceneID="pUr-Aj-bcg">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetFourth" title="BottomSheetFourth" id="PSK-e1-FL6" customClass="BottomSheetFourth" customModule="Gotovka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eg1-aw-c59">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6VV-5b-9Zx">
+                                <rect key="frame" x="25" y="84" width="364" height="739.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wg9-2k-S6u"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6VV-5b-9Zx" firstAttribute="leading" secondItem="Wg9-2k-S6u" secondAttribute="leading" constant="25" id="7Sv-7l-Qap"/>
+                            <constraint firstItem="Wg9-2k-S6u" firstAttribute="trailing" secondItem="6VV-5b-9Zx" secondAttribute="trailing" constant="25" id="Ncd-rC-uOR"/>
+                            <constraint firstItem="6VV-5b-9Zx" firstAttribute="top" secondItem="Wg9-2k-S6u" secondAttribute="top" constant="40" id="ONL-ZO-zZN"/>
+                            <constraint firstItem="6VV-5b-9Zx" firstAttribute="width" secondItem="6VV-5b-9Zx" secondAttribute="height" multiplier="310:630" id="lR7-FT-Q9C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="6VV-5b-9Zx" id="alw-zs-23o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbv-Oh-AJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="620" height="1234"/>
+        <image name="second" width="620" height="1236"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

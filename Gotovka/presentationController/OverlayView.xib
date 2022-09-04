@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverlayView" customModule="Gotovka" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="kd6-fW-JJu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="690"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKU-Rv-vu2">
+                    <rect key="frame" x="87" y="630" width="240" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I understand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73i-xl-2fC">
+                            <rect key="frame" x="74" y="11" width="92.5" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstItem="73i-xl-2fC" firstAttribute="centerX" secondItem="IKU-Rv-vu2" secondAttribute="centerX" id="2U7-lm-mCb"/>
+                        <constraint firstAttribute="width" constant="240" id="NYe-IT-vFT"/>
+                        <constraint firstItem="73i-xl-2fC" firstAttribute="centerY" secondItem="IKU-Rv-vu2" secondAttribute="centerY" id="Ugf-pB-c6z"/>
+                        <constraint firstAttribute="height" constant="40" id="xBJ-Zl-Vii"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-oS-alf">
+                    <rect key="frame" x="177" y="10" width="60" height="4"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="3CV-zk-nxj"/>
+                        <constraint firstAttribute="width" constant="60" id="MDt-uD-L1x"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfn-Mb-kgu" customClass="Ov">
+                    <rect key="frame" x="20" y="44" width="374" height="556"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Bz-oS-alf" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="8aI-pz-lxR"/>
+                <constraint firstItem="lfn-Mb-kgu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Kea-Ml-F1k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lfn-Mb-kgu" secondAttribute="trailing" constant="20" id="a1m-F1-VPc"/>
+                <constraint firstItem="IKU-Rv-vu2" firstAttribute="top" secondItem="lfn-Mb-kgu" secondAttribute="bottom" constant="30" id="agt-tk-Yj5"/>
+                <constraint firstItem="lfn-Mb-kgu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="f7q-gb-h5k"/>
+                <constraint firstItem="IKU-Rv-vu2" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="peG-bq-JgL"/>
+                <constraint firstItem="2Bz-oS-alf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="qm1-7c-hB4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IKU-Rv-vu2" secondAttribute="bottom" constant="20" id="rx9-ix-bNt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
